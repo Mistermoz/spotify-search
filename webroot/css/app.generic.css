@@ -1,0 +1,19 @@
+html, body, #container {
+    min-height: 100%;
+}
+body {
+    background-color: #111;
+}
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 20px;
+}
+.wrapper {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 20px;
+    background-color: white;
+}
+
