@@ -17,3 +17,95 @@ body {
     background-color: white;
 }
 
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #000;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type='text'] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 40px;
+    margin-right: 20px;
+    padding: 0px 10px;
+    vertical-align: middle;
+    width: 60%;
+}
+
+.box {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.checkboxes {
+    padding-top: 20px;
+}
+
+.input.checkbox {
+    display: inline-block;
+    margin: 0px;
+    margin-right: 20px;
+    vertical-align: middle;
+    width: auto;
+}
+
+.input.checkbox input {
+    display: inline-block;
+    height: 14px;
+    margin: 0px;
+    position: relative;
+    vertical-align: middle;
+    width: 20px; 
+}
+
+.input.checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+}
+
+.items {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.items .item {
+    display: inline-block;
+    min-height: 200px;
+    padding: 0px 20px;
+    width: 24%;
+}
+
+.items .item a {
+    display: block;
+}
+
+.items .item img {
+    width: 100%;
+}
+
+.progress {
+    background: none;
+    box-shadow: none;
+}
+
+.progress-bar {
+    opacity: 0;
+    transition: opacity 250ms;
+}
+
+.progress-bar.active {
+    opacity: 1;
+}
+

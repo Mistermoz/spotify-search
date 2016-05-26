@@ -3,12 +3,14 @@ angular.module('myApp.controllers', []);
 as.controller('AppCtrl', function($scope, $rootScope, $http, $location) {
     var types = '';
     $scope.q = '';
+    $scope.load = false;
     $scope.checkAlbums = false, $scope.checkArtists = false, $scope.checkTracks = false;
     $scope.opAlbums = false, $scope.opArtists = false, $scope.opTracks = false;
     $scope.allAlbums = {},  $scope.allArtists = {},  $scope.allTracks = {};
 
     $scope.search = function() {
         types = '';
+        $scope.load = true;
         $scope.allAlbums = {},  $scope.allArtists = {},  $scope.allTracks = {};
         $scope.opAlbums = false, $scope.opArtists = false, $scope.opTracks = false;
 
@@ -44,6 +46,8 @@ as.controller('AppCtrl', function($scope, $rootScope, $http, $location) {
                 if($scope.opAlbums == false && $scope.opArtists == false && $scope.opTracks == false) {
                     alert('No hay resultados para ' + $scope.q + '');
                 }
+
+                $scope.load = false;
                 
             }, function errorCallback(response) {
                 console.log(response);

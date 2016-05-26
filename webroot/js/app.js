@@ -4,5 +4,4 @@ as = angular.module('myApp', [
 as.config(function($routeProvider, $httpProvider) {
 $routeProvider
     .otherwise({redirectTo: '/'});
-
 });
